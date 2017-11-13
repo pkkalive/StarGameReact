@@ -1,5 +1,5 @@
 import React from 'react';
 import {render} from 'react-dom';
-import Card from './Card';
+import App from './App';
 
-render(<Card />, document.getElementById('react-root'));
+render(<App />, document.getElementById('react-root'));
