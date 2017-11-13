@@ -6,7 +6,7 @@ export default class App extends Component {
   state = {
     cards : []
     };
-
+    
     addNewCard = (cardInfo) => {
       this.setState(prevState => ({
         cards: prevState.cards.concat(cardInfo)
