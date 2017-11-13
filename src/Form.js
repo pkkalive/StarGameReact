@@ -9,7 +9,8 @@ export default class Form extends Component {
     event.preventDefault();
     axios.get(`https://api.github.com/users/${this.state.userName}`)
       .then(resp => {
-        console.log(resp);
+        this.props.onSubmit(resp.data);
+        this.setState({userName: ''})
       });
   };
   render() {
